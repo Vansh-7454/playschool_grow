@@ -37,6 +37,7 @@ import {
   Check,
   Award,
   Users,
+  CalendarCheck,
 } from "lucide-react";
 
 export default function HomePage() {
@@ -54,13 +55,9 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
             {/* Left Column (7 of 12): Expressive Preschool Typography & Value Proposition */}
             <div className="lg:col-span-7 flex flex-col justify-center">
-              {/* Eyebrow Pill */}
-              <div className="inline-flex items-center gap-2 mb-4 w-fit">
-                <span className="text-[12px] sm:text-[13px] font-bold tracking-[0.14em] uppercase text-[#287F78] bg-[#EAF7EE] px-4 py-1.5 rounded-full border border-[#A9DFC2] shadow-sm flex items-center gap-2 font-heading">
-                  <span className="w-2 h-2 rounded-full bg-[#FF786B] animate-pulse" />
-                  {siteContent.pages.home.eyebrow}
-                </span>
-              </div>
+              <span className="text-[13px] sm:text-[14px] font-bold text-[#FFA45B] tracking-wide mb-3 block font-heading">
+                Gomti Nagar, Lucknow · Early Education &amp; Day Care
+              </span>
 
               {/* H1 Headline in dark charcoal with coral highlight */}
               <h1 className="text-[38px] sm:text-[50px] lg:text-[56px] font-bold text-[#29332F] leading-[1.12] tracking-tight mb-5 font-heading">
@@ -282,9 +279,10 @@ export default function HomePage() {
 
             {/* Content on Right (6 cols): 2x2 Feature Grid */}
             <div className="lg:col-span-6">
-              <div className="inline-flex items-center gap-2 mb-3">
-                <span className="text-[12px] sm:text-[13px] font-bold tracking-[0.14em] uppercase text-[#287F78] bg-white px-4 py-1.5 rounded-full border border-[#A9DFC2] shadow-sm">
-                  VERIFIED CAMPUS SAFETY
+              <div className="mb-2">
+                <span className="text-[13px] sm:text-[14px] font-bold text-[#287F78] tracking-wide flex items-center gap-1.5 font-heading">
+                  <ShieldCheck className="w-4 h-4 text-[#287F78]" aria-hidden="true" />
+                  Campus Safety &amp; Vigilance
                 </span>
               </div>
               <h2 className="text-[32px] sm:text-[42px] font-bold text-[#29332F] leading-tight mb-4 font-heading">
@@ -418,9 +416,10 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             {/* Text on Left (6 cols) */}
             <div className="lg:col-span-6">
-              <div className="inline-flex items-center gap-2 mb-3">
-                <span className="text-[12px] sm:text-[13px] font-bold tracking-[0.14em] uppercase text-[#287F78] bg-[#EAF7EE] px-4 py-1.5 rounded-full border border-[#A9DFC2]">
-                  OUR FOUNDING PHILOSOPHY
+              <div className="mb-2">
+                <span className="text-[13px] sm:text-[14px] font-bold text-[#FFA45B] tracking-wide flex items-center gap-1.5 font-heading">
+                  <Sparkles className="w-4 h-4 text-[#FFA45B]" aria-hidden="true" />
+                  Our Founding Philosophy
                 </span>
               </div>
               <h2 className="text-[32px] sm:text-[44px] font-bold text-[#29332F] leading-tight mb-4 font-heading">
@@ -532,9 +531,10 @@ export default function HomePage() {
       {/* ============================================================== */}
       <section className="bg-gradient-to-b from-[#FFFDF9] via-[#FFF5EC] to-[#FFF9EF] py-16 sm:py-22 text-[#29332F] relative overflow-hidden border-b border-[#EADFCF]">
         <div className="site-container text-center max-w-[760px] mx-auto relative z-10">
-          <div className="inline-flex items-center gap-2 mb-4">
-            <span className="text-[12px] sm:text-[13px] font-bold tracking-[0.14em] uppercase text-[#287F78] bg-[#EAF7EE] px-4 py-1.5 rounded-full border border-[#A9DFC2] shadow-sm font-heading">
-              SCHEDULE YOUR VISIT · GOMTI NAGAR, LUCKNOW
+          <div className="flex items-center justify-center mb-3">
+            <span className="text-[13px] sm:text-[14px] font-bold text-[#287F78] tracking-wide flex items-center gap-1.5 font-heading">
+              <CalendarCheck className="w-4 h-4 text-[#287F78]" aria-hidden="true" />
+              Schedule Your Visit · Gomti Nagar, Lucknow
             </span>
           </div>
           <h2 className="text-[34px] sm:text-[46px] font-bold text-[#29332F] leading-[1.12] mb-4 font-heading">

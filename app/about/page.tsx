@@ -18,6 +18,7 @@ import {
   Sparkles,
   MapPin,
   Clock,
+  CalendarCheck,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -33,11 +34,12 @@ export default function AboutPage() {
   return (
     <div className="flex flex-col overflow-x-hidden">
       {/* ============================================================== */}
-      {/* 1. EDITORIAL PAGE HEADER                                       */}
+      {/* 1. VIBRANT 2-COLUMN HERO BANNER (Little Leaders style)         */}
       {/* ============================================================== */}
-      <section className="bg-[#FFF9EF] py-14 sm:py-20 border-b border-[#EADFCF]">
-        <div className="site-container">
-          <nav aria-label="Breadcrumb" className="mb-5">
+      <section className="relative bg-[#FFF9EF] border-b border-[#EADFCF] overflow-hidden pt-8 pb-14 sm:py-16 lg:py-20">
+        <div className="site-container relative z-10">
+          {/* Breadcrumb */}
+          <nav aria-label="Breadcrumb" className="mb-4">
             <ol className="flex items-center gap-2 text-xs sm:text-sm text-[#287F78]">
               <li>
                 <Link href="/" className="hover:text-[#FF786B] transition-colors font-medium">
@@ -53,18 +55,100 @@ export default function AboutPage() {
             </ol>
           </nav>
 
-          <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 mb-4">
-              <span className="text-[12px] sm:text-[13px] font-bold tracking-[0.14em] uppercase text-[#287F78] bg-[#EAF7EE] px-4 py-1.5 rounded-full border border-[#A9DFC2] shadow-sm font-heading">
-                {siteContent.pages.about.eyebrow}
-              </span>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            {/* Left Column (7 cols): Heading, Intro, Trust Points, CTAs */}
+            <div className="lg:col-span-7">
+              <div className="inline-flex items-center gap-2 mb-3">
+                <span className="text-[13px] sm:text-[14px] font-bold text-[#FFA45B] tracking-wide flex items-center gap-1.5 font-heading">
+                  Our Story &amp; Educational Philosophy
+                  <Sparkles className="w-4 h-4 text-[#FFA45B] fill-[#FFA45B]" aria-hidden="true" />
+                </span>
+              </div>
+
+              <h1 className="text-[34px] sm:text-[46px] md:text-[50px] lg:text-[54px] font-bold text-[#29332F] leading-[1.14] mb-4 font-heading">
+                About <span className="text-[#FFA45B]">Little Steps</span> School
+              </h1>
+
+              <p className="text-[16px] sm:text-[18px] text-[#4F5D56] leading-[1.65] font-body max-w-xl mb-6">
+                Built around safety, unhurried growth, and parent partnership in Gomti Nagar, Lucknow. How Little Steps grew out of a commitment to provide families with a calm, orderly, and genuinely nurturing early education space.
+              </p>
+
+              {/* Quick Highlight Pills */}
+              <div className="flex flex-wrap items-center gap-2.5 mb-8">
+                <span className="px-3.5 py-1.5 rounded-full bg-white border border-[#EADFCF] text-xs font-bold text-[#29332F] shadow-sm flex items-center gap-1.5">
+                  <span className="w-2 h-2 rounded-full bg-[#FF786B]" />
+                  Gomti Nagar Campus
+                </span>
+                <span className="px-3.5 py-1.5 rounded-full bg-white border border-[#EADFCF] text-xs font-bold text-[#29332F] shadow-sm flex items-center gap-1.5">
+                  <span className="w-2 h-2 rounded-full bg-[#287F78]" />
+                  Ages 2 to 5 Years
+                </span>
+                <span className="px-3.5 py-1.5 rounded-full bg-white border border-[#EADFCF] text-xs font-bold text-[#29332F] shadow-sm flex items-center gap-1.5">
+                  <span className="w-2 h-2 rounded-full bg-[#FFA45B]" />
+                  1:8 Educator Ratio
+                </span>
+                <span className="px-3.5 py-1.5 rounded-full bg-white border border-[#EADFCF] text-xs font-bold text-[#29332F] shadow-sm flex items-center gap-1.5">
+                  <span className="w-2 h-2 rounded-full bg-[#79C9F5]" />
+                  100% CCTV Monitored
+                </span>
+              </div>
+
+              {/* Action Buttons */}
+              <div className="flex flex-wrap items-center gap-3.5">
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-[#FFA45B] hover:bg-[#FF786B] text-white font-bold text-[14px] sm:text-[15px] shadow-[0_8px_20px_rgba(255,164,91,0.35)] hover:shadow-lg transition-all duration-300 font-heading"
+                >
+                  <span>Book a Campus Tour</span>
+                  <ArrowRight className="w-4 h-4" aria-hidden="true" />
+                </Link>
+
+                <Button
+                  href={whatsappHref}
+                  isExternal
+                  variant="secondary"
+                  className="!px-6 !py-3 rounded-full text-[14px] font-bold border border-[#EADFCF] bg-white text-[#29332F] hover:bg-[#FFF5EC] shadow-sm"
+                >
+                  <MessageSquare className="w-4 h-4 text-[#287F78]" />
+                  <span>WhatsApp Inquiry</span>
+                </Button>
+              </div>
             </div>
-            <h1 className="text-[36px] sm:text-[48px] lg:text-[52px] font-bold text-[#29332F] leading-[1.12] mb-5 font-heading">
-              {siteContent.pages.about.heading}
-            </h1>
-            <p className="text-[17px] sm:text-[19px] text-[#4F5D56] leading-[1.65] font-body">
-              {siteContent.pages.about.intro}
-            </p>
+
+            {/* Right Column (5 cols): Campus Photo with Organic Framing */}
+            <div className="lg:col-span-5 relative flex items-center justify-center lg:justify-end">
+              <div className="relative w-full max-w-[420px] lg:max-w-[460px]">
+                {/* Yellow Ring Arc Backdrop */}
+                <div className="absolute -bottom-3 -right-3 w-[260px] sm:w-[320px] h-[260px] sm:h-[320px] rounded-full border-[14px] sm:border-[18px] border-[#FFCA3A]/45 pointer-events-none -z-0" />
+
+                {/* Soft Lavender Cloud Shape Backdrop */}
+                <div className="absolute -top-4 -left-4 w-32 sm:w-40 h-24 bg-[#EAF7EE] rounded-[40px] pointer-events-none -z-0" />
+
+                {/* Main Photo Card */}
+                <div className="relative rounded-[28px] sm:rounded-[32px] overflow-hidden border-4 border-white shadow-[0_16px_40px_rgba(41,51,47,0.12)] bg-white z-10">
+                  <div className="relative aspect-[4/3] w-full">
+                    <Image
+                      src="/images/about/campus.webp"
+                      alt="Welcoming reception and campus environment of Little Steps Play School in Gomti Nagar Lucknow"
+                      fill
+                      priority={true}
+                      sizes="(max-width: 768px) 100vw, 420px"
+                      quality={90}
+                      style={{ objectFit: "cover" }}
+                      className="transition-transform duration-700 hover:scale-105"
+                    />
+                  </div>
+
+                  {/* Location Badge */}
+                  <div className="absolute bottom-3 left-3 bg-white/95 backdrop-blur-md px-3.5 py-1.5 rounded-full shadow-sm border border-[#EADFCF] flex items-center gap-2">
+                    <MapPin className="w-3.5 h-3.5 text-[#FF786B]" />
+                    <span className="text-xs font-bold text-[#29332F] font-heading">
+                      Gomti Nagar, Lucknow
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -102,9 +186,10 @@ export default function AboutPage() {
 
             {/* Story Text Right (7 of 12) */}
             <div className="lg:col-span-7">
-              <div className="inline-flex items-center gap-2 mb-3">
-                <span className="text-[12px] sm:text-[13px] font-bold tracking-[0.14em] uppercase text-[#FF786B] bg-[#FFF0EB] px-4 py-1.5 rounded-full border border-[#FF786B]/30 shadow-sm font-heading">
-                  DIRECTOR&apos;S PERSPECTIVE
+              <div className="mb-2">
+                <span className="text-[13px] sm:text-[14px] font-bold text-[#FF786B] tracking-wide flex items-center gap-1.5 font-heading">
+                  <Sparkles className="w-4 h-4 text-[#FF786B]" aria-hidden="true" />
+                  Director&apos;s Perspective
                 </span>
               </div>
 
@@ -238,9 +323,10 @@ export default function AboutPage() {
       {/* ============================================================== */}
       <section className="bg-gradient-to-b from-[#FFFDF9] via-[#FFF5EC] to-[#FFF9EF] py-16 sm:py-20 text-[#29332F] relative border-b border-[#EADFCF]">
         <div className="site-container text-center max-w-[720px] mx-auto">
-          <div className="inline-flex items-center gap-2 mb-4">
-            <span className="text-[12px] sm:text-[13px] font-bold tracking-[0.14em] uppercase text-[#287F78] bg-[#EAF7EE] px-4 py-1.5 rounded-full border border-[#A9DFC2] shadow-sm font-heading">
-              VISIT OUR CAMPUS · GOMTI NAGAR
+          <div className="flex items-center justify-center mb-3">
+            <span className="text-[13px] sm:text-[14px] font-bold text-[#287F78] tracking-wide flex items-center gap-1.5 font-heading">
+              <CalendarCheck className="w-4 h-4 text-[#287F78]" aria-hidden="true" />
+              Visit Our Campus · Gomti Nagar
             </span>
           </div>
           <h2 className="text-[32px] sm:text-[42px] font-bold text-[#29332F] leading-tight mb-4 font-heading">

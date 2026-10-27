@@ -228,7 +228,7 @@ export const siteContent: SiteContent = {
       title: "Little Steps Play School Lucknow | Play School & Day Care (Ages 2–5)",
       description:
         "Nurturing play school and day care in Lucknow for ages 2–5. Predictable routine, CCTV safety, trained early educators. Book your campus visit on WhatsApp.",
-      eyebrow: "LUCKNOW · EARLY LEARNING & DAY CARE (AGES 2–5)",
+      eyebrow: "Early Learning & Day Care (Ages 2–5)",
       heading: "Where curiosity blossoms and every little step is celebrated",
       intro:
         "A calm, safe learning home in Lucknow for children aged 2 to 5 years. We combine gentle socialisation, structured daily routines, and constant security so children feel secure and parents stay assured.",
@@ -237,7 +237,7 @@ export const siteContent: SiteContent = {
       title: "Early Childhood Programmes (Ages 2–5) | Little Steps Play School Lucknow",
       description:
         "Explore Playgroup, Nursery, and Kindergarten at Little Steps Play School in Lucknow. Transparent age requirements, morning timings, and foundational learning focus.",
-      eyebrow: "AGE-ALIGNED CURRICULUM",
+      eyebrow: "Early Learning & Developmental Stages",
       heading: "Carefully designed stages for each developmental milestone",
       intro:
         "Every age bracket has distinct social, physical, and sensory needs. Discover our structured timings, age criteria, and daily classroom routines below.",
@@ -246,7 +246,7 @@ export const siteContent: SiteContent = {
       title: "Secure Day Care in Lucknow | Little Steps Play School",
       description:
         "Reliable, hygienic day care in Lucknow for ages 2–5. Monitored rest spaces, nutritious snack routines, caring supervision, and flexible hours from 8:30 AM to 5:30 PM.",
-      eyebrow: "REASSURING FULL-DAY & POST-SCHOOL CARE",
+      eyebrow: "Reliable Day Care & Extended Routine",
       heading: "A gentle home away from home with structured care",
       intro:
         "For working parents in Lucknow needing dependable supervision after school hours or full-day care. Balanced rest, hygiene, and safe quiet activities.",
@@ -255,7 +255,7 @@ export const siteContent: SiteContent = {
       title: "Campus Gallery | Little Steps Play School Lucknow",
       description:
         "Tour the learning spaces, activity corners, sanitized wash stations, and outdoor soft play lawns at Little Steps Play School, Lucknow.",
-      eyebrow: "CAMPUS & CLASSROOM SPACES",
+      eyebrow: "Campus & Classroom Spaces",
       heading: "A clean, cheerful environment prepared for young learners",
       intro:
         "Explore our classrooms, reading corners, sensorial tables, and safety infrastructure. In compliance with our child privacy policy, only verified learning environments are shown.",
@@ -264,7 +264,7 @@ export const siteContent: SiteContent = {
       title: "About Little Steps Play School Lucknow | Our Story & Safety Standards",
       description:
         "Learn about the founding principles, director's philosophy, and strict safety guidelines of Little Steps Play School & Day Care in Lucknow.",
-      eyebrow: "OUR PHILOSOPHY & VALUES",
+      eyebrow: "Our Philosophy & Values",
       heading: "Built around safety, unhurried growth, and parent partnership",
       intro:
         "How Little Steps Play School grew out of a commitment to provide Lucknow families with a calm, orderly, and genuinely nurturing early education space.",
@@ -273,7 +273,7 @@ export const siteContent: SiteContent = {
       title: "Contact & Book Campus Visit | Little Steps Play School Lucknow",
       description:
         "Schedule an in-person school visit at Little Steps Play School in Gomti Nagar, Lucknow. Direct WhatsApp appointment link, visiting hours, and campus directions.",
-      eyebrow: "IN-PERSON CAMPUS VISITS",
+      eyebrow: "Campus Visits & Inquiries",
       heading: "Visit our campus and meet our early childhood educators",
       intro:
         "Admissions at Little Steps take place in person. We invite parents to tour our classrooms, observe safety standards, and ask any questions before enrolling.",

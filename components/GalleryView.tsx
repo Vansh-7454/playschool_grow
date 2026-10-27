@@ -201,48 +201,10 @@ export function GalleryView() {
     <div className="flex flex-col overflow-x-hidden">
       {/* ============================================================== */}
       {/* 1. LITTLE LEADERS HERO BANNER REDESIGN                         */}
-      {/* Exact reference recreation: boy with books, balloon, mascot,  */}
+      {/* Exact reference recreation: boy with books, mascot,            */}
       {/* cream background, orange accents, doodles, and warm layout     */}
       {/* ============================================================== */}
       <section className="relative bg-[#FFF9EF] border-b border-[#EADFCF] overflow-hidden pt-8 pb-16 sm:py-16 lg:py-20">
-        {/* Floating Hot Air Balloon (Top Left) */}
-        <div className="absolute left-3 sm:left-8 lg:left-14 top-2 sm:top-6 w-11 sm:w-16 md:w-20 lg:w-22 aspect-[10/13] pointer-events-none z-10 animate-float">
-          <svg className="w-full h-auto drop-shadow-md select-none" viewBox="0 0 100 130" fill="none">
-            <defs>
-              <radialGradient id="balloonGrad" cx="35%" cy="35%" r="65%">
-                <stop offset="0%" stopColor="#7DD3FC" />
-                <stop offset="70%" stopColor="#38BDF8" />
-                <stop offset="100%" stopColor="#0284C7" />
-              </radialGradient>
-              <linearGradient id="stripeGrad" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0%" stopColor="#FFFFFF" />
-                <stop offset="100%" stopColor="#E0F2FE" />
-              </linearGradient>
-              <linearGradient id="basketGrad" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor="#D97706" />
-                <stop offset="100%" stopColor="#92400E" />
-              </linearGradient>
-            </defs>
-            {/* Outer balloon shape */}
-            <path d="M50 5 C25 5 10 25 10 50 C10 72 32 90 42 98 L58 98 C68 90 90 72 90 50 C90 25 75 5 50 5 Z" fill="url(#balloonGrad)" />
-            {/* White stripes */}
-            <path d="M50 5 C38 5 30 25 30 50 C30 72 40 92 45 98 L55 98 C60 92 70 72 70 50 C70 25 62 5 50 5 Z" fill="url(#stripeGrad)" />
-            <path d="M50 5 C45 5 42 25 42 50 C42 72 47 92 48 98 L52 98 C53 92 58 72 58 50 C58 25 55 5 50 5 Z" fill="url(#balloonGrad)" />
-            {/* Balloon collar ring */}
-            <rect x="42" y="98" width="16" height="4" rx="2" fill="#F59E0B" />
-            {/* Rigging ropes */}
-            <line x1="43" y1="102" x2="40" y2="114" stroke="#78350F" strokeWidth="1.5" />
-            <line x1="47" y1="102" x2="44" y2="114" stroke="#78350F" strokeWidth="1.5" />
-            <line x1="53" y1="102" x2="56" y2="114" stroke="#78350F" strokeWidth="1.5" />
-            <line x1="57" y1="102" x2="60" y2="114" stroke="#78350F" strokeWidth="1.5" />
-            {/* Wicker basket */}
-            <rect x="38" y="114" width="24" height="14" rx="3" fill="url(#basketGrad)" stroke="#78350F" strokeWidth="1.2" />
-            <line x1="44" y1="114" x2="44" y2="128" stroke="#B45309" strokeWidth="1" />
-            <line x1="50" y1="114" x2="50" y2="128" stroke="#B45309" strokeWidth="1" />
-            <line x1="56" y1="114" x2="56" y2="128" stroke="#B45309" strokeWidth="1" />
-            <line x1="38" y1="121" x2="62" y2="121" stroke="#B45309" strokeWidth="1" />
-          </svg>
-        </div>
 
         {/* Waving Mascot (Bottom Left Corner) */}
         <div className="absolute bottom-0 left-2 sm:left-6 lg:left-12 w-20 sm:w-24 md:w-28 lg:w-32 z-20 pointer-events-none hidden sm:block">
@@ -569,9 +531,10 @@ export function GalleryView() {
       {/* ============================================================== */}
       <section className="bg-gradient-to-b from-[#FFFDF9] via-[#FFF5EC] to-[#FFF9EF] py-16 sm:py-20 text-[#29332F] relative border-b border-[#EADFCF]">
         <div className="site-container text-center max-w-[720px] mx-auto">
-          <div className="inline-flex items-center gap-2 mb-4">
-            <span className="text-[12px] sm:text-[13px] font-bold tracking-[0.14em] uppercase text-[#FFA45B] bg-[#FFF3E8] px-4 py-1.5 rounded-full border border-[#FFD8B8] shadow-sm font-heading">
-              TOUR OUR SPACES · GOMTI NAGAR
+          <div className="flex items-center justify-center mb-3">
+            <span className="text-[13px] sm:text-[14px] font-bold text-[#FFA45B] tracking-wide flex items-center gap-1.5 font-heading">
+              <Sparkles className="w-4 h-4 text-[#FFA45B]" aria-hidden="true" />
+              Tour Our Spaces · Gomti Nagar
             </span>
           </div>
           <h2 className="text-[32px] sm:text-[42px] font-bold text-[#29332F] leading-tight mb-4 font-heading">

@@ -15,6 +15,7 @@ import {
   ShieldCheck,
   Navigation,
   CalendarCheck,
+  Sparkles,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -51,13 +52,14 @@ export default function ContactPage() {
           </nav>
 
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 mb-4">
-              <span className="text-[12px] sm:text-[13px] font-bold tracking-[0.14em] uppercase text-[#287F78] bg-[#EAF7EE] px-4 py-1.5 rounded-full border border-[#A9DFC2] shadow-sm font-heading">
-                {siteContent.pages.contact.eyebrow}
+            <div className="mb-2">
+              <span className="text-[13px] sm:text-[14px] font-bold text-[#FFA45B] tracking-wide flex items-center gap-1.5 font-heading">
+                <Sparkles className="w-4 h-4 text-[#FFA45B]" aria-hidden="true" />
+                Campus Visits &amp; Inquiries
               </span>
             </div>
             <h1 className="text-[36px] sm:text-[48px] lg:text-[52px] font-bold text-[#29332F] leading-[1.12] mb-5 font-heading">
-              {siteContent.pages.contact.heading}
+              Contact <span className="text-[#FFA45B]">Little Steps</span> School
             </h1>
             <p className="text-[17px] sm:text-[19px] text-[#4F5D56] leading-[1.65] font-body">
               {siteContent.pages.contact.intro}
@@ -238,9 +240,10 @@ export default function ContactPage() {
       {/* ============================================================== */}
       <section className="bg-gradient-to-b from-[#FFFDF9] via-[#FFF5EC] to-[#FFF9EF] py-16 sm:py-20 text-[#29332F] relative border-b border-[#EADFCF]">
         <div className="site-container text-center max-w-[720px] mx-auto">
-          <div className="inline-flex items-center gap-2 mb-4">
-            <span className="text-[12px] sm:text-[13px] font-bold tracking-[0.14em] uppercase text-[#287F78] bg-[#EAF7EE] px-4 py-1.5 rounded-full border border-[#A9DFC2] shadow-sm font-heading">
-              SCHEDULE YOUR VISIT · LUCKNOW
+          <div className="flex items-center justify-center mb-3">
+            <span className="text-[13px] sm:text-[14px] font-bold text-[#287F78] tracking-wide flex items-center gap-1.5 font-heading">
+              <CalendarCheck className="w-4 h-4 text-[#287F78]" aria-hidden="true" />
+              Schedule Your Visit · Lucknow
             </span>
           </div>
           <h2 className="text-[32px] sm:text-[42px] font-bold text-[#29332F] leading-tight mb-4 font-heading">

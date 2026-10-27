@@ -34,12 +34,12 @@ export default function ProgrammesPage() {
   return (
     <div className="flex flex-col overflow-x-hidden">
       {/* ============================================================== */}
-      {/* 1. EDITORIAL PAGE HEADER                                       */}
+      {/* 1. VIBRANT 2-COLUMN HERO BANNER (Little Leaders / Gallery style) */}
       {/* ============================================================== */}
-      <section className="bg-[#FFF9EF] py-14 sm:py-20 border-b border-[#EADFCF]">
-        <div className="site-container">
+      <section className="relative bg-[#FFF9EF] border-b border-[#EADFCF] overflow-hidden pt-8 pb-12 sm:py-14 lg:py-16">
+        <div className="site-container relative z-10">
           {/* Breadcrumb */}
-          <nav aria-label="Breadcrumb" className="mb-5">
+          <nav aria-label="Breadcrumb" className="mb-4">
             <ol className="flex items-center gap-2 text-xs sm:text-sm text-[#287F78]">
               <li>
                 <Link href="/" className="hover:text-[#FF786B] transition-colors font-medium">
@@ -55,62 +55,104 @@ export default function ProgrammesPage() {
             </ol>
           </nav>
 
-          <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 mb-4">
-              <span className="text-[12px] sm:text-[13px] font-bold tracking-[0.14em] uppercase text-[#287F78] bg-[#EAF7EE] px-4 py-1.5 rounded-full border border-[#A9DFC2] shadow-sm font-heading">
-                {siteContent.pages.programmes.eyebrow}
-              </span>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            {/* Left Column (7 cols): Heading, Intro, CTAs, Jump-to-Stage */}
+            <div className="lg:col-span-7">
+              <div className="inline-flex items-center gap-2 mb-3">
+                <span className="text-[13px] sm:text-[14px] font-bold text-[#FFA45B] tracking-wide flex items-center gap-1.5 font-heading">
+                  Early Learning &amp; Developmental Stages
+                  <Sparkles className="w-4 h-4 text-[#FFA45B] fill-[#FFA45B]" aria-hidden="true" />
+                </span>
+              </div>
+
+              <h1 className="text-[34px] sm:text-[46px] md:text-[50px] lg:text-[54px] font-bold text-[#29332F] leading-[1.14] mb-4 font-heading">
+                Learning Programmes <span className="text-[#FFA45B]">Little Steps</span> School
+              </h1>
+
+              <p className="text-[16px] sm:text-[18px] text-[#4F5D56] leading-[1.65] font-body max-w-xl mb-6">
+                Every age bracket has distinct social, physical, and sensory needs. Explore our four age-aligned stages thoughtfully structured for toddlers and kindergarteners in Gomti Nagar.
+              </p>
+
+              {/* Action Buttons */}
+              <div className="flex flex-wrap items-center gap-3.5 mb-8">
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-[#FFA45B] hover:bg-[#FF786B] text-white font-bold text-[14px] sm:text-[15px] shadow-[0_8px_20px_rgba(255,164,91,0.35)] hover:shadow-lg transition-all duration-300 font-heading"
+                >
+                  <span>Book a Classroom Tour</span>
+                  <ArrowRight className="w-4 h-4" aria-hidden="true" />
+                </Link>
+
+                <Button
+                  href={whatsappHref}
+                  isExternal
+                  variant="secondary"
+                  className="!px-6 !py-3 rounded-full text-[14px] font-bold border border-[#EADFCF] bg-white text-[#29332F] hover:bg-[#FFF5EC] shadow-sm"
+                >
+                  <MessageSquare className="w-4 h-4 text-[#287F78]" />
+                  <span>WhatsApp Inquiry</span>
+                </Button>
+              </div>
+
+              {/* Jump to Stage Pills */}
+              <div className="pt-4 border-t border-[#EADFCF]/80">
+                <span className="text-xs font-bold uppercase tracking-wider text-[#5A6B64] block mb-2.5 font-heading">
+                  Select a Learning Stage:
+                </span>
+                <div className="flex flex-wrap items-center gap-2.5">
+                  {siteContent.programmes.map((p) => (
+                    <a
+                      key={p.id}
+                      href={`#${p.id}`}
+                      className="px-4 py-2 rounded-full bg-white border border-[#EADFCF] text-xs sm:text-[13px] font-bold text-[#29332F] hover:border-[#FFA45B] hover:bg-[#FFF5EC] hover:text-[#FFA45B] shadow-sm transition-all flex items-center gap-1.5"
+                    >
+                      <span>{p.title}</span>
+                      <span className="text-[#5A6B64] text-[11px] font-normal">({p.ageBracket})</span>
+                    </a>
+                  ))}
+                </div>
+              </div>
             </div>
-            <h1 className="text-[36px] sm:text-[48px] lg:text-[52px] font-bold text-[#29332F] leading-[1.12] mb-5 font-heading">
-              {siteContent.pages.programmes.heading}
-            </h1>
-            <p className="text-[17px] sm:text-[19px] text-[#4F5D56] leading-[1.65] font-body">
-              {siteContent.pages.programmes.intro}
-            </p>
-          </div>
 
-          {/* Clean Stage Jump Bar */}
-          <div className="mt-10 pt-6 border-t border-[#EADFCF] flex flex-wrap items-center gap-3">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#5A6B64] mr-1">
-              Jump to Stage:
-            </span>
-            {siteContent.programmes.map((p) => (
-              <a
-                key={p.id}
-                href={`#${p.id}`}
-                className="px-4 py-2 rounded-full bg-white border border-[#EADFCF] text-xs font-bold text-[#29332F] hover:border-[#FF786B] hover:text-[#FF786B] shadow-sm transition-all"
-              >
-                {p.title} ({p.ageBracket})
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
+            {/* Right Column (5 cols): Rich Visual Photo with Playful Organic Framing */}
+            <div className="lg:col-span-5 relative flex items-center justify-center lg:justify-end">
+              <div className="relative w-full max-w-[420px] lg:max-w-[460px]">
+                {/* Yellow Ring Arc Backdrop */}
+                <div className="absolute -bottom-3 -right-3 w-[260px] sm:w-[320px] h-[260px] sm:h-[320px] rounded-full border-[14px] sm:border-[18px] border-[#FFCA3A]/45 pointer-events-none -z-0" />
+                
+                {/* Soft Lavender Cloud Shape Backdrop */}
+                <div className="absolute -top-4 -left-4 w-32 sm:w-40 h-24 bg-[#EAF7EE] rounded-[40px] pointer-events-none -z-0" />
 
-      {/* ============================================================== */}
-      {/* 2. CURRICULUM OVERVIEW HERO BANNER                             */}
-      {/* ============================================================== */}
-      <section className="py-12 sm:py-16 bg-white border-b border-[#EADFCF]">
-        <div className="site-container">
-          <div className="relative w-full rounded-[32px] overflow-hidden border-4 border-white shadow-[0_16px_40px_rgba(41,51,47,0.08)] bg-[#FFF9EF]">
-            <div className="relative aspect-[16/9] md:aspect-[21/9] w-full">
-              <Image
-                src="/images/programmes/hero.webp"
-                alt="Overview of Montessori learning materials and children's activity table at Little Steps Lucknow"
-                fill
-                priority={true}
-                sizes="(max-width: 1280px) 100vw, 1200px"
-                quality={90}
-                style={{ objectFit: "cover" }}
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#29332F]/80 via-transparent to-transparent flex items-end p-6 sm:p-10">
-                <div className="text-white max-w-xl">
-                  <span className="text-xs font-bold uppercase tracking-wider text-[#FFD84D] block mb-1 font-heading">
-                    Structured Development · Gomti Nagar Campus
-                  </span>
-                  <h2 className="text-xl sm:text-2xl font-bold font-heading">
-                    Montessori Apparatus &amp; Natural Sensory Exploration
-                  </h2>
+                {/* Main Photo Card */}
+                <div className="relative rounded-[28px] sm:rounded-[32px] overflow-hidden border-4 border-white shadow-[0_16px_40px_rgba(41,51,47,0.12)] bg-white z-10">
+                  <div className="relative aspect-[4/3] w-full">
+                    <Image
+                      src="/images/programmes/hero.webp"
+                      alt="Montessori learning materials and playful classroom activities at Little Steps Lucknow"
+                      fill
+                      priority={true}
+                      sizes="(max-width: 768px) 100vw, 420px"
+                      quality={90}
+                      style={{ objectFit: "cover" }}
+                      className="transition-transform duration-700 hover:scale-105"
+                    />
+                  </div>
+
+                  {/* Floating Badge */}
+                  <div className="absolute bottom-3 left-3 right-3 bg-white/95 backdrop-blur-md p-3 rounded-2xl border border-[#EADFCF] shadow-sm flex items-center justify-between">
+                    <div className="flex items-center gap-2">
+                      <div className="w-8 h-8 rounded-xl bg-[#FFF0EB] flex items-center justify-center text-[#FF786B]">
+                        <Baby className="w-4 h-4" />
+                      </div>
+                      <div>
+                        <div className="text-xs font-bold text-[#29332F] font-heading">Ages 2 to 5 Years</div>
+                        <div className="text-[11px] text-[#5A6B64]">Montessori &amp; Playway Curriculum</div>
+                      </div>
+                    </div>
+                    <span className="text-[11px] font-bold text-[#287F78] bg-[#EAF7EE] px-2.5 py-1 rounded-full border border-[#A9DFC2]">
+                      Gomti Nagar
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -337,9 +379,10 @@ export default function ProgrammesPage() {
       {/* ============================================================== */}
       <section className="bg-gradient-to-b from-[#FFFDF9] via-[#FFF5EC] to-[#FFF9EF] py-16 sm:py-20 text-[#29332F] relative border-b border-[#EADFCF]">
         <div className="site-container text-center max-w-[720px] mx-auto">
-          <div className="inline-flex items-center gap-2 mb-4">
-            <span className="text-[12px] sm:text-[13px] font-bold tracking-[0.14em] uppercase text-[#287F78] bg-[#EAF7EE] px-4 py-1.5 rounded-full border border-[#A9DFC2] shadow-sm font-heading">
-              ADMISSIONS &amp; GUIDANCE · LUCKNOW
+          <div className="flex items-center justify-center mb-3">
+            <span className="text-[13px] sm:text-[14px] font-bold text-[#287F78] tracking-wide flex items-center gap-1.5 font-heading">
+              <Sparkles className="w-4 h-4 text-[#FFA45B]" aria-hidden="true" />
+              Admissions &amp; Guidance · Lucknow
             </span>
           </div>
           <h2 className="text-[32px] sm:text-[42px] font-bold text-[#29332F] leading-tight mb-4 font-heading">

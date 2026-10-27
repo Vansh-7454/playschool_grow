@@ -23,17 +23,13 @@ export function SectionHeader({
   return (
     <div className={`max-w-[720px] mb-10 sm:mb-14 ${alignmentClass} ${className}`}>
       {eyebrow && (
-        <div className="inline-block mb-3">
-          <span
-            className={`text-[12px] sm:text-[13px] font-bold tracking-[0.14em] uppercase px-3.5 py-1 rounded-full ${
-              isDark
-                ? "bg-white/15 text-[#FFD84D] border border-white/25"
-                : "bg-[#EAF7EE] text-[#287F78] border border-[#A9DFC2]"
-            }`}
-          >
-            {eyebrow}
-          </span>
-        </div>
+        <span
+          className={`text-[12px] sm:text-[13px] font-bold tracking-[0.14em] uppercase block mb-2.5 font-heading ${
+            isDark ? "text-[#FFD84D]" : "text-[#FFA45B]"
+          }`}
+        >
+          {eyebrow}
+        </span>
       )}
       <h2
         className={`text-[28px] sm:text-[36px] lg:text-[42px] font-bold leading-[1.14] tracking-tight font-heading ${

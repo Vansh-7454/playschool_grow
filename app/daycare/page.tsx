@@ -17,6 +17,7 @@ import {
   Phone,
   ArrowRight,
   Sparkles,
+  CalendarCheck,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -32,11 +33,13 @@ export default function DayCarePage() {
   return (
     <div className="flex flex-col overflow-x-hidden">
       {/* ============================================================== */}
-      {/* 1. EDITORIAL PAGE HEADER                                       */}
       {/* ============================================================== */}
-      <section className="bg-[#FFF9EF] py-14 sm:py-20 border-b border-[#EADFCF]">
-        <div className="site-container">
-          <nav aria-label="Breadcrumb" className="mb-5">
+      {/* 1. VIBRANT 2-COLUMN HERO BANNER (Little Leaders style)         */}
+      {/* ============================================================== */}
+      <section className="relative bg-[#FFF9EF] border-b border-[#EADFCF] overflow-hidden pt-8 pb-14 sm:py-16 lg:py-20">
+        <div className="site-container relative z-10">
+          {/* Breadcrumb */}
+          <nav aria-label="Breadcrumb" className="mb-4">
             <ol className="flex items-center gap-2 text-xs sm:text-sm text-[#287F78]">
               <li>
                 <Link href="/" className="hover:text-[#FF786B] transition-colors font-medium">
@@ -52,109 +55,111 @@ export default function DayCarePage() {
             </ol>
           </nav>
 
-          <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 mb-4">
-              <span className="text-[12px] sm:text-[13px] font-bold tracking-[0.14em] uppercase text-[#FF786B] bg-[#FFF0EB] px-4 py-1.5 rounded-full border border-[#FF786B]/30 shadow-sm font-heading">
-                {siteContent.pages.daycare.eyebrow}
-              </span>
-            </div>
-            <h1 className="text-[36px] sm:text-[48px] lg:text-[52px] font-bold text-[#29332F] leading-[1.12] mb-5 font-heading">
-              {siteContent.pages.daycare.heading}
-            </h1>
-            <p className="text-[17px] sm:text-[19px] text-[#4F5D56] leading-[1.65] font-body">
-              {siteContent.pages.daycare.intro}
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* ============================================================== */}
-      {/* 2. DAY CARE OVERVIEW & HERO SPLIT                              */}
-      {/* ============================================================== */}
-      <section className="py-16 sm:py-24 bg-white border-b border-[#EADFCF]">
-        <div className="site-container">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
-            {/* Visual on Left (5 of 12) */}
-            <div className="lg:col-span-5 relative">
-              <div className="relative overflow-hidden rounded-[32px] border-4 border-white shadow-[0_16px_40px_rgba(41,51,47,0.1)] bg-white">
-                <div className="relative aspect-[4/3] w-full">
-                  <Image
-                    src="/images/daycare/hero.webp"
-                    alt="Caregiver interacting with happy young children in bright daycare room in Lucknow"
-                    fill
-                    priority={true}
-                    sizes="(max-width: 768px) 100vw, 40vw"
-                    quality={90}
-                    style={{ objectFit: "cover" }}
-                    className="transition-transform duration-700 hover:scale-105"
-                  />
-                </div>
-                {/* Verified Supervision Tag */}
-                <div className="absolute bottom-4 left-4 bg-white/95 backdrop-blur-md px-3.5 py-1.5 rounded-full shadow-sm border border-[#EADFCF] flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-[#287F78] animate-pulse" />
-                  <span className="text-xs font-bold text-[#29332F] font-heading">
-                    1:8 Monitored Toddler Care
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            {/* Content on Right (7 of 12) */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            {/* Left Column (7 cols): Heading, Intro, Highlights, CTAs */}
             <div className="lg:col-span-7">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#EAF7EE] text-xs font-bold text-[#287F78] border border-[#A9DFC2] mb-4 font-heading">
+              <div className="inline-flex items-center gap-2 mb-3">
+                <span className="text-[13px] sm:text-[14px] font-bold text-[#FFA45B] tracking-wide flex items-center gap-1.5 font-heading">
+                  Reliable Day Care &amp; Extended Routine
+                  <Sparkles className="w-4 h-4 text-[#FFA45B] fill-[#FFA45B]" aria-hidden="true" />
+                </span>
+              </div>
+
+              <h1 className="text-[34px] sm:text-[46px] md:text-[50px] lg:text-[54px] font-bold text-[#29332F] leading-[1.14] mb-4 font-heading">
+                Secure Day Care <span className="text-[#FFA45B]">Little Steps</span> School
+              </h1>
+
+              <p className="text-[16px] sm:text-[18px] text-[#4F5D56] leading-[1.65] font-body max-w-xl mb-6">
+                Reliable, hygienic day care in Lucknow for children aged 2 to 5 years. Monitored rest spaces, nutritious warm meals, caring supervision, and flexible hours from 8:30 AM to 5:30 PM in Gomti Nagar.
+              </p>
+
+              {/* Operational Hours Pill */}
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white text-xs font-bold text-[#287F78] border border-[#EADFCF] mb-6 shadow-sm font-heading">
                 <Clock className="w-3.5 h-3.5 text-[#287F78]" aria-hidden="true" />
                 <span>Operational Hours: 8:30 AM – 5:30 PM (Mon–Sat)</span>
               </div>
 
-              <h2 className="text-[30px] sm:text-[40px] font-bold text-[#29332F] leading-tight mb-4 font-heading">
-                A structured, unhurried afternoon for growing toddlers
-              </h2>
-
-              <p className="text-[16px] text-[#4F5D56] leading-relaxed mb-6 font-normal">
-                Our extended day care provides full-day or after-school care for children aged 2 to 5 years. Rather than unstructured screen time or crowded rooms, our day care is thoughtfully paced with balanced periods of nutrition, quiet monitored sleep, guided hygiene routines, and gentle table recreation.
-              </p>
-
               {/* 2 Highlight Cards */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-                <div className="p-5 rounded-2xl bg-[#FFF9EF] border border-[#EADFCF] shadow-sm">
-                  <div className="w-10 h-10 rounded-xl bg-[#FFF0EB] border border-[#FF786B]/30 flex items-center justify-center mb-3">
-                    <Moon className="w-5 h-5 text-[#FF786B]" aria-hidden="true" />
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 mb-8">
+                <div className="p-4 rounded-2xl bg-white border border-[#EADFCF] shadow-sm">
+                  <div className="w-9 h-9 rounded-xl bg-[#FFF0EB] border border-[#FF786B]/30 flex items-center justify-center mb-2.5">
+                    <Moon className="w-4 h-4 text-[#FF786B]" aria-hidden="true" />
                   </div>
-                  <h3 className="text-[16px] font-bold text-[#29332F] font-heading mb-1">
-                    Individual Cots &amp; Bedding
+                  <h3 className="text-[15px] font-bold text-[#29332F] font-heading mb-1">
+                    Individual Sleep Pods
                   </h3>
-                  <p className="text-xs sm:text-[13px] text-[#4F5D56] leading-relaxed">
-                    Personal hygienic bedding in a tranquil, climate-managed room with soothing instrumental lullabies.
+                  <p className="text-xs text-[#4F5D56] leading-relaxed">
+                    Personal hygienic bedding in a tranquil, climate-managed room with soothing lullabies.
                   </p>
                 </div>
 
-                <div className="p-5 rounded-2xl bg-[#F0F4FD] border border-[#D5E6F7] shadow-sm">
-                  <div className="w-10 h-10 rounded-xl bg-[#EAF7EE] border border-[#A9DFC2] flex items-center justify-center mb-3">
-                    <Utensils className="w-5 h-5 text-[#287F78]" aria-hidden="true" />
+                <div className="p-4 rounded-2xl bg-white border border-[#EADFCF] shadow-sm">
+                  <div className="w-9 h-9 rounded-xl bg-[#EAF7EE] border border-[#A9DFC2] flex items-center justify-center mb-2.5">
+                    <Utensils className="w-4 h-4 text-[#287F78]" aria-hidden="true" />
                   </div>
-                  <h3 className="text-[16px] font-bold text-[#29332F] font-heading mb-1">
-                    Warm Nutritious Routine
+                  <h3 className="text-[15px] font-bold text-[#29332F] font-heading mb-1">
+                    Warm Nutritious Meals
                   </h3>
-                  <p className="text-xs sm:text-[13px] text-[#4F5D56] leading-relaxed">
-                    Assisted warm meals, handwashing routines, and healthy evening snacks served on child-height tables.
+                  <p className="text-xs text-[#4F5D56] leading-relaxed">
+                    Assisted warm meals, handwashing routines, and healthy evening snacks on child-height tables.
                   </p>
                 </div>
               </div>
 
-              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+              {/* Action Buttons */}
+              <div className="flex flex-wrap items-center gap-3.5">
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-[#FFA45B] hover:bg-[#FF786B] text-white font-bold text-[14px] sm:text-[15px] shadow-[0_8px_20px_rgba(255,164,91,0.35)] hover:shadow-lg transition-all duration-300 font-heading"
+                >
+                  <span>Schedule Day Care Visit</span>
+                  <ArrowRight className="w-4 h-4" aria-hidden="true" />
+                </Link>
+
                 <Button
                   href={whatsappHref}
                   isExternal
-                  variant="coral"
-                  className="flex items-center justify-center gap-2 shadow-md"
-                  ariaLabel="Check day care slot availability"
+                  variant="secondary"
+                  className="!px-6 !py-3 rounded-full text-[14px] font-bold border border-[#EADFCF] bg-white text-[#29332F] hover:bg-[#FFF5EC] shadow-sm"
                 >
-                  <MessageSquare className="w-4 h-4 text-white" aria-hidden="true" />
-                  <span>Check Day Care Availability on WhatsApp</span>
+                  <MessageSquare className="w-4 h-4 text-[#287F78]" />
+                  <span>WhatsApp Inquiry</span>
                 </Button>
-                <Button href="/contact" variant="secondary" className="w-full sm:w-auto">
-                  <span>Visit Campus</span>
-                </Button>
+              </div>
+            </div>
+
+            {/* Right Column (5 cols): Photo with Organic Framing */}
+            <div className="lg:col-span-5 relative flex items-center justify-center lg:justify-end">
+              <div className="relative w-full max-w-[420px] lg:max-w-[460px]">
+                {/* Yellow Ring Arc Backdrop */}
+                <div className="absolute -bottom-3 -right-3 w-[260px] sm:w-[320px] h-[260px] sm:h-[320px] rounded-full border-[14px] sm:border-[18px] border-[#FFCA3A]/45 pointer-events-none -z-0" />
+
+                {/* Soft Lavender Cloud Shape Backdrop */}
+                <div className="absolute -top-4 -left-4 w-32 sm:w-40 h-24 bg-[#EAF7EE] rounded-[40px] pointer-events-none -z-0" />
+
+                {/* Main Photo Card */}
+                <div className="relative rounded-[28px] sm:rounded-[32px] overflow-hidden border-4 border-white shadow-[0_16px_40px_rgba(41,51,47,0.12)] bg-white z-10">
+                  <div className="relative aspect-[4/3] w-full">
+                    <Image
+                      src="/images/daycare/hero.webp"
+                      alt="Caregiver interacting with happy young children in bright daycare room in Lucknow"
+                      fill
+                      priority={true}
+                      sizes="(max-width: 768px) 100vw, 420px"
+                      quality={90}
+                      style={{ objectFit: "cover" }}
+                      className="transition-transform duration-700 hover:scale-105"
+                    />
+                  </div>
+
+                  {/* Verified Supervision Tag */}
+                  <div className="absolute bottom-3 left-3 bg-white/95 backdrop-blur-md px-3.5 py-1.5 rounded-full shadow-sm border border-[#EADFCF] flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-[#287F78] animate-pulse" />
+                    <span className="text-xs font-bold text-[#29332F] font-heading">
+                      1:8 Monitored Toddler Care
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -216,9 +221,10 @@ export default function DayCarePage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             {/* Content Left (7 of 12) */}
             <div className="lg:col-span-7">
-              <div className="inline-flex items-center gap-2 mb-3">
-                <span className="text-[12px] sm:text-[13px] font-bold tracking-[0.14em] uppercase text-[#287F78] bg-[#EAF7EE] px-4 py-1.5 rounded-full border border-[#A9DFC2] shadow-sm font-heading">
-                  HYGIENE &amp; NUTRITION
+              <div className="mb-2">
+                <span className="text-[13px] sm:text-[14px] font-bold text-[#287F78] tracking-wide flex items-center gap-1.5 font-heading">
+                  <Sparkles className="w-4 h-4 text-[#FFA45B]" aria-hidden="true" />
+                  Hygiene &amp; Nutrition
                 </span>
               </div>
               <h2 className="text-[30px] sm:text-[40px] font-bold text-[#29332F] leading-tight mb-4 font-heading">
@@ -297,9 +303,10 @@ export default function DayCarePage() {
       {/* ============================================================== */}
       <section className="bg-gradient-to-b from-[#FFFDF9] via-[#FFF5EC] to-[#FFF9EF] py-16 sm:py-20 text-[#29332F] relative border-b border-[#EADFCF]">
         <div className="site-container text-center max-w-[720px] mx-auto">
-          <div className="inline-flex items-center gap-2 mb-4">
-            <span className="text-[12px] sm:text-[13px] font-bold tracking-[0.14em] uppercase text-[#287F78] bg-[#EAF7EE] px-4 py-1.5 rounded-full border border-[#A9DFC2] shadow-sm font-heading">
-              EXTENDED CARE ADMISSIONS · GOMTI NAGAR
+          <div className="flex items-center justify-center mb-3">
+            <span className="text-[13px] sm:text-[14px] font-bold text-[#287F78] tracking-wide flex items-center gap-1.5 font-heading">
+              <CalendarCheck className="w-4 h-4 text-[#287F78]" aria-hidden="true" />
+              Extended Care Admissions · Gomti Nagar
             </span>
           </div>
           <h2 className="text-[32px] sm:text-[42px] font-bold text-[#29332F] leading-tight mb-4 font-heading">
