@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 48" width="240" height="48" fill="none" role="img" aria-label="Little Steps Play School Logo">
+  <!-- Icon Mark (40x40 at x=4, y=4) -->
+  <g transform="translate(2, 2) scale(0.916)">
+    <path d="M12 28C12 20 18 14 26 14C30 14 33 16 35 18C33 26 26 34 18 34C14.5 34 12 31.5 12 28Z" fill="#70278E" />
+    <path d="M26 12C34 12 38 18 38 26C38 30 36 33 34 35C26 33 20 26 20 18C20 14.5 22.5 12 26 12Z" fill="#FFF000" stroke="#48165F" stroke-width="1.5" />
+    <circle cx="27" cy="23" r="3" fill="#48165F" />
+  </g>
+  <!-- Wordmark -->
+  <text x="56" y="25" fill="#48165F" font-family="'Fredoka', system-ui, -apple-system, sans-serif" font-size="21" font-weight="700" letter-spacing="-0.01em">Little Steps</text>
+  <text x="56.5" y="38" fill="#70278E" font-family="'Nunito', system-ui, -apple-system, sans-serif" font-size="9" font-weight="700" letter-spacing="0.12em">PLAY SCHOOL &amp; DAY CARE · LUCKNOW</text>
+</svg>

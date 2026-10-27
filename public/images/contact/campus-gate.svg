@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" fill="none">
+  <!-- Clean background tone -->
+  <rect width="800" height="1000" fill="#FFFDF9" />
+  <rect x="16" y="16" width="768" height="968" rx="20" fill="#F7F2E9" stroke="#E5DDD0" stroke-width="2" />
+
+  <!-- Atmospheric Vector Scene -->
+  
+      <g transform="translate(80, 80) scale(1.2)">
+        <rect x="40" y="60" width="480" height="580" rx="16" fill="#F7F2E9" stroke="#E5DDD0" stroke-width="3" />
+        <!-- Entrance gate pillars -->
+        <rect x="100" y="180" width="60" height="340" rx="8" fill="#28584E" />
+        <rect x="400" y="180" width="60" height="340" rx="8" fill="#28584E" />
+        <!-- Ornamental arch -->
+        <path d="M100 180 Q280 90 460 180" stroke="#28584E" stroke-width="12" fill="none" />
+        <!-- Signboard -->
+        <rect x="180" y="120" width="200" height="50" rx="8" fill="#FFFDF9" stroke="#C25E2E" stroke-width="3" />
+        <text x="280" y="152" fill="#28584E" font-size="16" font-weight="bold" text-anchor="middle">LITTLE STEPS</text>
+        <!-- Gate grille -->
+        <line x1="160" y1="280" x2="400" y2="280" stroke="#C25E2E" stroke-width="4" />
+        <line x1="160" y1="360" x2="400" y2="360" stroke="#C25E2E" stroke-width="4" />
+        <line x1="160" y1="440" x2="400" y2="440" stroke="#C25E2E" stroke-width="4" />
+      </g>
+    
+
+  <!-- Lower Branding and Atmosphere Overlay Strip -->
+  <rect x="32" y="904" width="736" height="68" rx="12" fill="#192A25" opacity="0.95" />
+  <text x="52" y="932" fill="#F6F4EE" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="16" font-weight="700">Campus Entrance and Visitor Check-In</text>
+  <text x="52" y="954" fill="#9EB3AC" font-family="'Inter', system-ui, sans-serif" font-size="11.5">Visitor identification register and supervised drop-off zone</text>
+  <rect x="610" y="916" width="140" height="26" rx="13" fill="#28584E" />
+  <text x="680" y="933" fill="#FFFFFF" font-family="'Inter', system-ui, sans-serif" font-size="9.5" font-weight="600" text-anchor="middle">Visitor Entrance</text>
+</svg>

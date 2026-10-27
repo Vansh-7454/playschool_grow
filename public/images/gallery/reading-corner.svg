@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" fill="none">
+  <!-- Clean background tone -->
+  <rect width="800" height="600" fill="#FFFDF9" />
+  <rect x="16" y="16" width="768" height="568" rx="20" fill="#F7F2E9" stroke="#E5DDD0" stroke-width="2" />
+
+  <!-- Atmospheric Vector Scene -->
+  
+      <g transform="translate(100, 40) scale(1.05)">
+        <rect x="40" y="40" width="560" height="420" rx="16" fill="#F7F2E9" stroke="#E5DDD0" stroke-width="3" />
+        <rect x="80" y="80" width="480" height="180" rx="12" fill="#EFE6D8" stroke="#28584E" stroke-width="2" />
+        <line x1="80" y1="170" x2="560" y2="170" stroke="#28584E" stroke-width="2" />
+        <!-- Books -->
+        <rect x="110" y="100" width="28" height="70" rx="4" fill="#C25E2E" />
+        <rect x="150" y="110" width="30" height="60" rx="4" fill="#28584E" />
+        <rect x="195" y="95" width="26" height="75" rx="4" fill="#4E7E73" />
+        <!-- Floor cushion -->
+        <ellipse cx="320" cy="340" rx="140" ry="40" fill="#28584E" />
+        <ellipse cx="320" cy="325" rx="100" ry="25" fill="#C25E2E" />
+      </g>
+    
+
+  <!-- Lower Branding and Atmosphere Overlay Strip -->
+  <rect x="32" y="504" width="736" height="68" rx="12" fill="#192A25" opacity="0.95" />
+  <text x="52" y="532" fill="#F6F4EE" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="16" font-weight="700">Library and Story Corner</text>
+  <text x="52" y="554" fill="#9EB3AC" font-family="'Inter', system-ui, sans-serif" font-size="11.5">Low wooden bookshelves and comfortable floor seating</text>
+  <rect x="610" y="516" width="140" height="26" rx="13" fill="#28584E" />
+  <text x="680" y="533" fill="#FFFFFF" font-family="'Inter', system-ui, sans-serif" font-size="9.5" font-weight="600" text-anchor="middle">Early Literacy</text>
+</svg>

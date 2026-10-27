@@ -1,0 +1,205 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-color: #FFF9EF;
+    --surface-color: #FFFFFF;
+    --surface2-color: #F0F4FD;
+    --text-color: #29332F;
+    --text-muted-color: #5A6B64;
+    --primary-color: #FF786B;
+    --primary-hover-color: #E66356;
+    --coral-color: #FF786B;
+    --warm-orange-color: #FFA45B;
+    --sunny-yellow-color: #FFD84D;
+    --sky-blue-color: #79C9F5;
+    --mint-green-color: #A9DFC2;
+    --teal-color: #287F78;
+    --soft-lavender-color: #DCD0FA;
+    --border-color: #EADFCF;
+    --dark-band-color: #29332F;
+    --dark-band-text: #FFFFFF;
+    --dark-band-muted: #A9DFC2;
+  }
+
+  * {
+    border-color: var(--border-color);
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-body), system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  @media (min-width: 768px) {
+    body {
+      font-size: 18px;
+    }
+  }
+
+  ::selection {
+    background-color: #FFD84D;
+    color: #29332F;
+  }
+
+  :focus-visible {
+    outline: 2px solid #FF786B;
+    outline-offset: 2px;
+  }
+
+  a {
+    text-underline-offset: 4px;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: var(--font-heading), system-ui, sans-serif;
+    text-wrap: balance;
+    letter-spacing: -0.015em;
+    color: var(--text-color);
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+}
+
+/* Base custom container utility */
+.site-container {
+  width: min(100% - 32px, 1200px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 640px) {
+  .site-container {
+    width: min(100% - 48px, 1200px);
+  }
+}
+
+@media (min-width: 1024px) {
+  .site-container {
+    width: min(100% - 80px, 1200px);
+  }
+}
+
+/* Vertical section padding */
+.section-padding {
+  padding-top: clamp(56px, 6vw, 96px);
+  padding-bottom: clamp(56px, 6vw, 96px);
+}
+
+.section-padding-compact {
+  padding-top: 44px;
+  padding-bottom: 44px;
+}
+
+/* Playful card and raised layered shadows */
+.shadow-soft-card {
+  box-shadow: 0 4px 20px -2px rgba(112, 39, 142, 0.08), 0 2px 8px -2px rgba(72, 22, 95, 0.04);
+}
+
+.shadow-soft-raised {
+  box-shadow: 0 16px 40px -8px rgba(112, 39, 142, 0.16), 0 6px 16px -4px rgba(72, 22, 95, 0.08);
+}
+
+.shadow-yellow-glow {
+  box-shadow: 0 6px 24px -2px rgba(255, 240, 0, 0.45);
+}
+
+/* Touch targets */
+.tap-target {
+  min-height: 48px;
+  min-width: 48px;
+}
+
+/* Playful organic image masks */
+.organic-mask-hero {
+  border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+}
+
+.organic-mask-blob {
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}
+
+@keyframes gentleFloat {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(2deg);
+  }
+}
+
+.animate-float {
+  animation: gentleFloat 5s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.04);
+    opacity: 1;
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+
+@keyframes floatBobY {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes floatBobX {
+  0%, 100% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(7px);
+  }
+}
+
+.float-bob-y {
+  animation: floatBobY 4.5s ease-in-out infinite;
+}
+
+.float-bob-x {
+  animation: floatBobX 5.5s ease-in-out infinite;
+}
+
+@keyframes mascotWave {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-6px) rotate(1.5deg);
+  }
+}
+
+.animate-mascot {
+  animation: mascotWave 4s ease-in-out infinite;
+}
+
+

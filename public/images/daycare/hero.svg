@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3200 1800" width="3200" height="1800" fill="none">
+  <!-- Clean background tone -->
+  <rect width="3200" height="1800" fill="#FFFDF9" />
+  <rect x="16" y="16" width="3168" height="1768" rx="20" fill="#F7F2E9" stroke="#E5DDD0" stroke-width="2" />
+
+  <!-- Atmospheric Vector Scene -->
+  
+      <g transform="translate(200, 80) scale(1.2)">
+        <!-- Nap cot row -->
+        <rect x="40" y="180" width="160" height="90" rx="12" fill="#EFE6D8" stroke="#E5DDD0" stroke-width="3" />
+        <rect x="50" y="195" width="40" height="30" rx="6" fill="#FFFDF9" />
+        <rect x="230" y="180" width="160" height="90" rx="12" fill="#EFE6D8" stroke="#E5DDD0" stroke-width="3" />
+        <rect x="240" y="195" width="40" height="30" rx="6" fill="#FFFDF9" />
+        <rect x="420" y="180" width="160" height="90" rx="12" fill="#EFE6D8" stroke="#E5DDD0" stroke-width="3" />
+        <rect x="430" y="195" width="40" height="30" rx="6" fill="#FFFDF9" />
+        <!-- Calming moon and stars -->
+        <path d="M300 80 A30 30 0 1 0 330 130 A24 24 0 1 1 300 80 Z" fill="#C25E2E" opacity="0.8" />
+      </g>
+    
+
+  <!-- Lower Branding and Atmosphere Overlay Strip -->
+  <rect x="32" y="1704" width="3136" height="68" rx="12" fill="#192A25" opacity="0.95" />
+  <text x="52" y="1732" fill="#F6F4EE" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="16" font-weight="700">Supervised Afternoon Care</text>
+  <text x="52" y="1754" fill="#9EB3AC" font-family="'Inter', system-ui, sans-serif" font-size="11.5">Individualized sanitized cots, warm meals and restful routine</text>
+  <rect x="3010" y="1716" width="140" height="26" rx="13" fill="#28584E" />
+  <text x="3080" y="1733" fill="#FFFFFF" font-family="'Inter', system-ui, sans-serif" font-size="9.5" font-weight="600" text-anchor="middle">Day Care 8:30 AM – 5:30 PM</text>
+</svg>

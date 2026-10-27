@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" fill="none">
+  <!-- Clean background tone -->
+  <rect width="800" height="600" fill="#FFFDF9" />
+  <rect x="16" y="16" width="768" height="568" rx="20" fill="#F7F2E9" stroke="#E5DDD0" stroke-width="2" />
+
+  <!-- Atmospheric Vector Scene -->
+  
+      <g transform="translate(120, 80) scale(1.1)">
+        <rect x="60" y="100" width="440" height="320" rx="16" fill="#FFFDF9" stroke="#E5DDD0" stroke-width="3" />
+        <!-- Drawing palette and brushes -->
+        <circle cx="200" cy="240" r="70" fill="#EFE6D8" />
+        <circle cx="170" cy="220" r="14" fill="#C25E2E" />
+        <circle cx="205" cy="205" r="14" fill="#28584E" />
+        <circle cx="230" cy="235" r="14" fill="#F4D35E" />
+        <circle cx="200" cy="265" r="14" fill="#4E7E73" />
+
+        <!-- Abacus / Counting frame -->
+        <rect x="330" y="160" width="130" height="180" rx="8" fill="#F7F2E9" stroke="#28584E" stroke-width="2" />
+        <line x1="330" y1="200" x2="460" y2="200" stroke="#28584E" stroke-width="2" />
+        <line x1="330" y1="250" x2="460" y2="250" stroke="#28584E" stroke-width="2" />
+        <line x1="330" y1="300" x2="460" y2="300" stroke="#28584E" stroke-width="2" />
+        <circle cx="360" cy="200" r="8" fill="#C25E2E" />
+        <circle cx="390" cy="200" r="8" fill="#C25E2E" />
+        <circle cx="430" cy="250" r="8" fill="#28584E" />
+      </g>
+    
+
+  <!-- Lower Branding and Atmosphere Overlay Strip -->
+  <rect x="32" y="504" width="736" height="68" rx="12" fill="#192A25" opacity="0.95" />
+  <text x="52" y="532" fill="#F6F4EE" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="16" font-weight="700">Nursery Phonics and Numbers</text>
+  <text x="52" y="554" fill="#9EB3AC" font-family="'Inter', system-ui, sans-serif" font-size="11.5">Pre-writing lines, language development and expressive arts</text>
+  <rect x="610" y="516" width="140" height="26" rx="13" fill="#28584E" />
+  <text x="680" y="533" fill="#FFFFFF" font-family="'Inter', system-ui, sans-serif" font-size="9.5" font-weight="600" text-anchor="middle">Ages 3.0 – 4.0</text>
+</svg>

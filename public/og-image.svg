@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" fill="none">
+  <!-- Background with subtle purple gradient -->
+  <rect width="1200" height="630" fill="#48165F" />
+  
+  <!-- Subtle decorative warm glow ring -->
+  <circle cx="1000" cy="200" r="300" fill="#70278E" opacity="0.6" />
+  <circle cx="1100" cy="450" r="220" fill="#FFF000" opacity="0.15" />
+  <circle cx="150" cy="50" r="250" fill="#852FB0" opacity="0.4" />
+  
+  <!-- Logo Mark Graphic -->
+  <g transform="translate(110, 100) scale(2.2)">
+    <path d="M12 28C12 20 18 14 26 14C30 14 33 16 35 18C33 26 26 34 18 34C14.5 34 12 31.5 12 28Z" fill="#EDE2FF" />
+    <path d="M26 12C34 12 38 18 38 26C38 30 36 33 34 35C26 33 20 26 20 18C20 14.5 22.5 12 26 12Z" fill="#FFF000" stroke="#FFFFFF" stroke-width="1.5" />
+    <circle cx="27" cy="23" r="3.5" fill="#70278E" />
+  </g>
+  
+  <!-- Header Text -->
+  <text x="240" y="160" fill="#FFFFFF" font-family="'Fredoka', system-ui, sans-serif" font-size="52" font-weight="700" letter-spacing="-0.02em">Little Steps</text>
+  <text x="245" y="195" fill="#FFF000" font-family="'Nunito', system-ui, sans-serif" font-size="18" font-weight="800" letter-spacing="0.16em">PLAY SCHOOL &amp; DAY CARE · LUCKNOW</text>
+
+  <!-- Tagline & Core Statement -->
+  <text x="110" y="320" fill="#FFFFFF" font-family="'Fredoka', system-ui, sans-serif" font-size="46" font-weight="700" letter-spacing="-0.02em">Where curiosity blossoms and every little step is celebrated</text>
+  <text x="110" y="380" fill="#EDE2FF" font-family="'Nunito', system-ui, sans-serif" font-size="24" font-weight="500">Playgroup, Nursery, Kindergarten &amp; Day Care in Lucknow for Ages 2–5.</text>
+  
+  <!-- Trust Pills -->
+  <g transform="translate(110, 460)">
+    <rect width="240" height="54" rx="27" fill="#FFF000" />
+    <text x="120" y="34" fill="#48165F" font-family="'Nunito', system-ui, sans-serif" font-size="17" font-weight="800" text-anchor="middle">Ages 2 to 5 Years</text>
+    
+    <rect x="260" width="270" height="54" rx="27" fill="#70278E" stroke="#FFF000" stroke-width="1.5" />
+    <text x="395" y="34" fill="#FFFFFF" font-family="'Nunito', system-ui, sans-serif" font-size="17" font-weight="700" text-anchor="middle">CCTV &amp; Safe Campus</text>
+    
+    <rect x="550" width="290" height="54" rx="27" fill="#EDE2FF" />
+    <text x="695" y="34" fill="#70278E" font-family="'Nunito', system-ui, sans-serif" font-size="17" font-weight="800" text-anchor="middle">Book Visits on WhatsApp</text>
+  </g>
+</svg>

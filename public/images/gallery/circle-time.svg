@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" fill="none">
+  <!-- Clean background tone -->
+  <rect width="800" height="600" fill="#FFFDF9" />
+  <rect x="16" y="16" width="768" height="568" rx="20" fill="#F7F2E9" stroke="#E5DDD0" stroke-width="2" />
+
+  <!-- Atmospheric Vector Scene -->
+  
+      <g transform="translate(100, 40) scale(1.05)">
+        <rect x="40" y="40" width="560" height="420" rx="16" fill="#F7F2E9" stroke="#E5DDD0" stroke-width="3" />
+        <circle cx="320" cy="250" r="160" fill="#FFFDF9" stroke="#E5DDD0" stroke-width="3" />
+        <circle cx="320" cy="250" r="110" fill="#EFE6D8" />
+        <circle cx="320" cy="250" r="60" fill="#28584E" />
+        <!-- Seating dots -->
+        <circle cx="320" cy="120" r="18" fill="#C25E2E" />
+        <circle cx="430" cy="180" r="18" fill="#4E7E73" />
+        <circle cx="440" cy="310" r="18" fill="#C25E2E" />
+        <circle cx="370" cy="380" r="18" fill="#4E7E73" />
+        <circle cx="270" cy="380" r="18" fill="#C25E2E" />
+        <circle cx="200" cy="310" r="18" fill="#4E7E73" />
+        <circle cx="210" cy="180" r="18" fill="#C25E2E" />
+      </g>
+    
+
+  <!-- Lower Branding and Atmosphere Overlay Strip -->
+  <rect x="32" y="504" width="736" height="68" rx="12" fill="#192A25" opacity="0.95" />
+  <text x="52" y="532" fill="#F6F4EE" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="16" font-weight="700">Morning Circle and Assembly Space</text>
+  <text x="52" y="554" fill="#9EB3AC" font-family="'Inter', system-ui, sans-serif" font-size="11.5">Colorful circle rug for morning greetings and social songs</text>
+  <rect x="610" y="516" width="140" height="26" rx="13" fill="#28584E" />
+  <text x="680" y="533" fill="#FFFFFF" font-family="'Inter', system-ui, sans-serif" font-size="9.5" font-weight="600" text-anchor="middle">Social Bonding</text>
+</svg>
