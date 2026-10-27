@@ -52,12 +52,6 @@ export default function ContactPage() {
           </nav>
 
           <div className="max-w-3xl">
-            <div className="mb-2">
-              <span className="text-[13px] sm:text-[14px] font-bold text-[#FFA45B] tracking-wide flex items-center gap-1.5 font-heading">
-                <Sparkles className="w-4 h-4 text-[#FFA45B]" aria-hidden="true" />
-                Campus Visits &amp; Inquiries
-              </span>
-            </div>
             <h1 className="text-[36px] sm:text-[48px] lg:text-[52px] font-bold text-[#29332F] leading-[1.12] mb-5 font-heading">
               Contact <span className="text-[#FFA45B]">Little Steps</span> School
             </h1>
@@ -78,9 +72,6 @@ export default function ContactPage() {
             <div className="lg:col-span-5 space-y-6">
               <div className="p-7 sm:p-8 rounded-[28px] bg-[#FFF9EF] border border-[#EADFCF] shadow-[0_8px_25px_rgba(41,51,47,0.06)] space-y-6">
                 <div>
-                  <span className="text-[11px] font-bold uppercase tracking-[0.14em] text-[#FF786B] block mb-1 font-heading">
-                    Direct Admissions &amp; Tours
-                  </span>
                   <h2 className="text-[24px] font-bold text-[#29332F] font-heading">
                     Campus Information
                   </h2>
@@ -189,7 +180,6 @@ export default function ContactPage() {
       <section className="py-16 sm:py-24 bg-[#F0F4FD] border-b border-[#E2ECF7]">
         <div className="site-container max-w-[880px] mx-auto text-center">
           <SectionHeader
-            eyebrow="CAMPUS ACCESS &amp; COURTESY"
             heading="Guidelines for parents visiting campus"
             intro="To preserve our calm classroom rhythm and ensure 100% child safety during school hours:"
             align="center"
@@ -240,12 +230,6 @@ export default function ContactPage() {
       {/* ============================================================== */}
       <section className="bg-gradient-to-b from-[#FFFDF9] via-[#FFF5EC] to-[#FFF9EF] py-16 sm:py-20 text-[#29332F] relative border-b border-[#EADFCF]">
         <div className="site-container text-center max-w-[720px] mx-auto">
-          <div className="flex items-center justify-center mb-3">
-            <span className="text-[13px] sm:text-[14px] font-bold text-[#287F78] tracking-wide flex items-center gap-1.5 font-heading">
-              <CalendarCheck className="w-4 h-4 text-[#287F78]" aria-hidden="true" />
-              Schedule Your Visit · Lucknow
-            </span>
-          </div>
           <h2 className="text-[32px] sm:text-[42px] font-bold text-[#29332F] leading-tight mb-4 font-heading">
             Book your school visit now
           </h2>

@@ -58,12 +58,6 @@ export default function DayCarePage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Column (7 cols): Heading, Intro, Highlights, CTAs */}
             <div className="lg:col-span-7">
-              <div className="inline-flex items-center gap-2 mb-3">
-                <span className="text-[13px] sm:text-[14px] font-bold text-[#FFA45B] tracking-wide flex items-center gap-1.5 font-heading">
-                  Reliable Day Care &amp; Extended Routine
-                  <Sparkles className="w-4 h-4 text-[#FFA45B] fill-[#FFA45B]" aria-hidden="true" />
-                </span>
-              </div>
 
               <h1 className="text-[34px] sm:text-[46px] md:text-[50px] lg:text-[54px] font-bold text-[#29332F] leading-[1.14] mb-4 font-heading">
                 Secure Day Care <span className="text-[#FFA45B]">Little Steps</span> School
@@ -172,7 +166,6 @@ export default function DayCarePage() {
       <section className="py-16 sm:py-24 bg-[#F0F4FD] border-b border-[#E2ECF7]">
         <div className="site-container max-w-[880px] mx-auto">
           <SectionHeader
-            eyebrow="PREDICTABLE SCHEDULE"
             heading="Our complete daily routine from arrival to evening pickup"
             intro="A predictable daily rhythm helps young children feel emotionally grounded, secure, and cooperative throughout the afternoon."
             align="center"
@@ -221,12 +214,6 @@ export default function DayCarePage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             {/* Content Left (7 of 12) */}
             <div className="lg:col-span-7">
-              <div className="mb-2">
-                <span className="text-[13px] sm:text-[14px] font-bold text-[#287F78] tracking-wide flex items-center gap-1.5 font-heading">
-                  <Sparkles className="w-4 h-4 text-[#FFA45B]" aria-hidden="true" />
-                  Hygiene &amp; Nutrition
-                </span>
-              </div>
               <h2 className="text-[30px] sm:text-[40px] font-bold text-[#29332F] leading-tight mb-4 font-heading">
                 Clean dining habits and guided self-reliance
               </h2>
@@ -303,12 +290,6 @@ export default function DayCarePage() {
       {/* ============================================================== */}
       <section className="bg-gradient-to-b from-[#FFFDF9] via-[#FFF5EC] to-[#FFF9EF] py-16 sm:py-20 text-[#29332F] relative border-b border-[#EADFCF]">
         <div className="site-container text-center max-w-[720px] mx-auto">
-          <div className="flex items-center justify-center mb-3">
-            <span className="text-[13px] sm:text-[14px] font-bold text-[#287F78] tracking-wide flex items-center gap-1.5 font-heading">
-              <CalendarCheck className="w-4 h-4 text-[#287F78]" aria-hidden="true" />
-              Extended Care Admissions · Gomti Nagar
-            </span>
-          </div>
           <h2 className="text-[32px] sm:text-[42px] font-bold text-[#29332F] leading-tight mb-4 font-heading">
             Need dependable day care in Gomti Nagar?
           </h2>

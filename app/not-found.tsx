@@ -12,9 +12,6 @@ export default function NotFound() {
           <Compass className="w-8 h-8" aria-hidden="true" />
         </div>
 
-        <span className="inline-block text-xs font-bold uppercase tracking-[0.14em] text-[#FF786B] bg-[#FF786B]/10 px-3.5 py-1 rounded-full mb-3">
-          Page Not Found
-        </span>
 
         <h1 className="text-[34px] sm:text-[42px] font-bold text-[#29332F] leading-tight mb-4 font-heading">
           This path has wandered off the playground

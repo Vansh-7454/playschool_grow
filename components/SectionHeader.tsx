@@ -22,15 +22,6 @@ export function SectionHeader({
 
   return (
     <div className={`max-w-[720px] mb-10 sm:mb-14 ${alignmentClass} ${className}`}>
-      {eyebrow && (
-        <span
-          className={`text-[12px] sm:text-[13px] font-bold tracking-[0.14em] uppercase block mb-2.5 font-heading ${
-            isDark ? "text-[#FFD84D]" : "text-[#FFA45B]"
-          }`}
-        >
-          {eyebrow}
-        </span>
-      )}
       <h2
         className={`text-[28px] sm:text-[36px] lg:text-[42px] font-bold leading-[1.14] tracking-tight font-heading ${
           isDark ? "text-[#FFFFFF]" : "text-[#29332F]"

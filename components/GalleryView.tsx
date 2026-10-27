@@ -222,13 +222,6 @@ export function GalleryView() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Column: Eyebrow, Heading, Subtitle, CTA */}
             <div className="lg:col-span-7 pt-5 sm:pt-0 pl-4 sm:pl-16 lg:pl-16 pr-2">
-              {/* Eyebrow badge with Sparkle */}
-              <div className="inline-flex items-center gap-2 mb-4">
-                <span className="text-[13px] sm:text-[14px] font-bold text-[#FFA45B] tracking-wide flex items-center gap-1.5 font-heading">
-                  Kindergarten &amp; Day Care
-                  <Sparkles className="w-4 h-4 text-[#FFA45B] fill-[#FFA45B]" aria-hidden="true" />
-                </span>
-              </div>
 
               {/* Main Heading styled like "About Little Leaders School" */}
               <h1 className="text-[36px] sm:text-[46px] md:text-[52px] lg:text-[56px] font-bold text-[#29332F] leading-[1.12] mb-5 font-heading">
@@ -531,12 +524,6 @@ export function GalleryView() {
       {/* ============================================================== */}
       <section className="bg-gradient-to-b from-[#FFFDF9] via-[#FFF5EC] to-[#FFF9EF] py-16 sm:py-20 text-[#29332F] relative border-b border-[#EADFCF]">
         <div className="site-container text-center max-w-[720px] mx-auto">
-          <div className="flex items-center justify-center mb-3">
-            <span className="text-[13px] sm:text-[14px] font-bold text-[#FFA45B] tracking-wide flex items-center gap-1.5 font-heading">
-              <Sparkles className="w-4 h-4 text-[#FFA45B]" aria-hidden="true" />
-              Tour Our Spaces · Gomti Nagar
-            </span>
-          </div>
           <h2 className="text-[32px] sm:text-[42px] font-bold text-[#29332F] leading-tight mb-4 font-heading">
             Experience our classrooms in person
           </h2>

@@ -55,9 +55,6 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
             {/* Left Column (7 of 12): Expressive Preschool Typography & Value Proposition */}
             <div className="lg:col-span-7 flex flex-col justify-center">
-              <span className="text-[13px] sm:text-[14px] font-bold text-[#FFA45B] tracking-wide mb-3 block font-heading">
-                Gomti Nagar, Lucknow · Early Education &amp; Day Care
-              </span>
 
               {/* H1 Headline in dark charcoal with coral highlight */}
               <h1 className="text-[38px] sm:text-[50px] lg:text-[56px] font-bold text-[#29332F] leading-[1.12] tracking-tight mb-5 font-heading">
@@ -160,9 +157,6 @@ export default function HomePage() {
       <section className="section-padding bg-[#FFA45B] relative overflow-hidden text-white border-b border-[#E8934C]">
         <div className="site-container relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-14 sm:mb-18">
-            <span className="inline-block text-xs font-bold tracking-[0.18em] uppercase text-white/95 bg-white/20 backdrop-blur-sm px-4 py-1.5 rounded-full mb-3 font-heading">
-              Our Classes &amp; Early Learning
-            </span>
             <h2 className="text-[34px] sm:text-[46px] font-bold text-white leading-tight font-heading mb-4">
               We Meet Kids At Their Level Regardless Of Their Age
             </h2>
@@ -279,12 +273,6 @@ export default function HomePage() {
 
             {/* Content on Right (6 cols): 2x2 Feature Grid */}
             <div className="lg:col-span-6">
-              <div className="mb-2">
-                <span className="text-[13px] sm:text-[14px] font-bold text-[#287F78] tracking-wide flex items-center gap-1.5 font-heading">
-                  <ShieldCheck className="w-4 h-4 text-[#287F78]" aria-hidden="true" />
-                  Campus Safety &amp; Vigilance
-                </span>
-              </div>
               <h2 className="text-[32px] sm:text-[42px] font-bold text-[#29332F] leading-tight mb-4 font-heading">
                 Continuous safety measures so parents have peace of mind
               </h2>
@@ -342,9 +330,6 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             {/* Left Column: Editorial Daycare Content (6 cols) */}
             <div className="lg:col-span-6">
-              <span className="text-[12px] sm:text-[13px] font-bold tracking-[0.14em] uppercase text-[#FF786B] bg-[#FFF0EB] px-4 py-1.5 rounded-full inline-block mb-4 shadow-sm font-heading border border-[#FF786B]/30">
-                Day Care · Extended Learning
-              </span>
 
               <h2 className="text-[34px] sm:text-[46px] font-bold text-[#29332F] leading-[1.1] mb-5 font-heading">
                 A warm, loving home away from home
@@ -416,12 +401,6 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             {/* Text on Left (6 cols) */}
             <div className="lg:col-span-6">
-              <div className="mb-2">
-                <span className="text-[13px] sm:text-[14px] font-bold text-[#FFA45B] tracking-wide flex items-center gap-1.5 font-heading">
-                  <Sparkles className="w-4 h-4 text-[#FFA45B]" aria-hidden="true" />
-                  Our Founding Philosophy
-                </span>
-              </div>
               <h2 className="text-[32px] sm:text-[44px] font-bold text-[#29332F] leading-tight mb-4 font-heading">
                 Gentle first steps. Confident young minds.
               </h2>
@@ -502,7 +481,6 @@ export default function HomePage() {
       <section className="section-padding bg-[#FFFDF9] pt-16 pb-20 border-b border-[#EADFCF]">
         <div className="site-container max-w-[820px]">
           <SectionHeader
-            eyebrow="ADMISSIONS &amp; VISITOR QUESTIONS"
             heading="Common questions parents ask before visiting"
             intro="Everything you need to know about our admission visits, safety measures, and program timings."
             align="center"
@@ -531,12 +509,6 @@ export default function HomePage() {
       {/* ============================================================== */}
       <section className="bg-gradient-to-b from-[#FFFDF9] via-[#FFF5EC] to-[#FFF9EF] py-16 sm:py-22 text-[#29332F] relative overflow-hidden border-b border-[#EADFCF]">
         <div className="site-container text-center max-w-[760px] mx-auto relative z-10">
-          <div className="flex items-center justify-center mb-3">
-            <span className="text-[13px] sm:text-[14px] font-bold text-[#287F78] tracking-wide flex items-center gap-1.5 font-heading">
-              <CalendarCheck className="w-4 h-4 text-[#287F78]" aria-hidden="true" />
-              Schedule Your Visit · Gomti Nagar, Lucknow
-            </span>
-          </div>
           <h2 className="text-[34px] sm:text-[46px] font-bold text-[#29332F] leading-[1.12] mb-4 font-heading">
             Experience our classrooms and meet our educators
           </h2>

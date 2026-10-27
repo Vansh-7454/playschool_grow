@@ -58,12 +58,6 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Column (7 cols): Heading, Intro, Trust Points, CTAs */}
             <div className="lg:col-span-7">
-              <div className="inline-flex items-center gap-2 mb-3">
-                <span className="text-[13px] sm:text-[14px] font-bold text-[#FFA45B] tracking-wide flex items-center gap-1.5 font-heading">
-                  Our Story &amp; Educational Philosophy
-                  <Sparkles className="w-4 h-4 text-[#FFA45B] fill-[#FFA45B]" aria-hidden="true" />
-                </span>
-              </div>
 
               <h1 className="text-[34px] sm:text-[46px] md:text-[50px] lg:text-[54px] font-bold text-[#29332F] leading-[1.14] mb-4 font-heading">
                 About <span className="text-[#FFA45B]">Little Steps</span> School
@@ -186,12 +180,6 @@ export default function AboutPage() {
 
             {/* Story Text Right (7 of 12) */}
             <div className="lg:col-span-7">
-              <div className="mb-2">
-                <span className="text-[13px] sm:text-[14px] font-bold text-[#FF786B] tracking-wide flex items-center gap-1.5 font-heading">
-                  <Sparkles className="w-4 h-4 text-[#FF786B]" aria-hidden="true" />
-                  Director&apos;s Perspective
-                </span>
-              </div>
 
               <h2 className="text-[30px] sm:text-[40px] font-bold text-[#29332F] leading-tight mb-4 font-heading">
                 Every child deserves an unhurried, gentle start
@@ -240,7 +228,6 @@ export default function AboutPage() {
       <section className="py-16 sm:py-24 bg-[#F0F4FD] border-b border-[#E2ECF7]">
         <div className="site-container">
           <SectionHeader
-            eyebrow="OUR FOUNDATIONAL PILLARS"
             heading="Built on transparency, hygiene and verified safety"
             intro="The non-negotiable operational principles guiding our teachers and caregivers every single day."
             align="center"
@@ -323,12 +310,6 @@ export default function AboutPage() {
       {/* ============================================================== */}
       <section className="bg-gradient-to-b from-[#FFFDF9] via-[#FFF5EC] to-[#FFF9EF] py-16 sm:py-20 text-[#29332F] relative border-b border-[#EADFCF]">
         <div className="site-container text-center max-w-[720px] mx-auto">
-          <div className="flex items-center justify-center mb-3">
-            <span className="text-[13px] sm:text-[14px] font-bold text-[#287F78] tracking-wide flex items-center gap-1.5 font-heading">
-              <CalendarCheck className="w-4 h-4 text-[#287F78]" aria-hidden="true" />
-              Visit Our Campus · Gomti Nagar
-            </span>
-          </div>
           <h2 className="text-[32px] sm:text-[42px] font-bold text-[#29332F] leading-tight mb-4 font-heading">
             Meet our educators in Gomti Nagar
           </h2>

@@ -58,12 +58,6 @@ export default function ProgrammesPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             {/* Left Column (7 cols): Heading, Intro, CTAs, Jump-to-Stage */}
             <div className="lg:col-span-7">
-              <div className="inline-flex items-center gap-2 mb-3">
-                <span className="text-[13px] sm:text-[14px] font-bold text-[#FFA45B] tracking-wide flex items-center gap-1.5 font-heading">
-                  Early Learning &amp; Developmental Stages
-                  <Sparkles className="w-4 h-4 text-[#FFA45B] fill-[#FFA45B]" aria-hidden="true" />
-                </span>
-              </div>
 
               <h1 className="text-[34px] sm:text-[46px] md:text-[50px] lg:text-[54px] font-bold text-[#29332F] leading-[1.14] mb-4 font-heading">
                 Learning Programmes <span className="text-[#FFA45B]">Little Steps</span> School
@@ -313,7 +307,6 @@ export default function ProgrammesPage() {
       <section className="py-16 sm:py-24 bg-[#FFF9EF] border-b border-[#EADFCF]">
         <div className="site-container max-w-[920px] mx-auto text-center">
           <SectionHeader
-            eyebrow="ADMISSIONS PROCESS"
             heading="How admissions work at Little Steps"
             intro="We prioritize personal connection, classroom transparency, and verified readiness. Admissions happen exclusively in person."
             align="center"
@@ -379,12 +372,6 @@ export default function ProgrammesPage() {
       {/* ============================================================== */}
       <section className="bg-gradient-to-b from-[#FFFDF9] via-[#FFF5EC] to-[#FFF9EF] py-16 sm:py-20 text-[#29332F] relative border-b border-[#EADFCF]">
         <div className="site-container text-center max-w-[720px] mx-auto">
-          <div className="flex items-center justify-center mb-3">
-            <span className="text-[13px] sm:text-[14px] font-bold text-[#287F78] tracking-wide flex items-center gap-1.5 font-heading">
-              <Sparkles className="w-4 h-4 text-[#FFA45B]" aria-hidden="true" />
-              Admissions &amp; Guidance · Lucknow
-            </span>
-          </div>
           <h2 className="text-[32px] sm:text-[42px] font-bold text-[#29332F] leading-tight mb-4 font-heading">
             Not sure which stage is right for your child?
           </h2>
